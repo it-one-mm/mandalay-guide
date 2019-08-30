@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlaceDet"
+    android:orientation="vertical">
+    <ViewFlipper
+        android:id="@+id/viewfilip"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+    </ViewFlipper>
+
+    <com.borjabravo.readmoretextview.ReadMoreTextView
+        android:id="@+id/text_view"
+        android:textColor="@color/colorBlack"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:trimCollapsedText="Show All"
+        app:trimExpandedText="Show Less"
+        app:trimMode="trimModeLine"
+        app:trimLength="10"
+        app:colorClickableText="@color/colorAccent"
+        />
+
+    <Button
+        android:id="@+id/btngetdirectiron"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorBlue"
+        android:drawableLeft="@drawable/ic_dir"
+        android:layout_margin="50dp"
+        android:paddingLeft="10dp"
+        android:fontFamily="@font/zgf"
+        android:textStyle="bold"
+        android:text="GEt Direction"
+        android:textColor="@color/colorWhite" />
+
+
+</LinearLayout>
